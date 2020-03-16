@@ -1,0 +1,29 @@
+# Total System Security for Windows
+Total System Security for Windows is a simple safe file that is used to somewhat do a stressing test to your computer.
+# How?
+It executes some usual executable files from the executable of this file.
+# How many?
+It contains : 
+SystemTrayMessage.exe by robvanderwoude (https://www.robvanderwoude.com/dialogboxes.php)
+SystemTrayMessage.cs (Written by robvanderwoude) (Link : https://www.robvanderwoude.com/dialogboxes.php)
+icon.ico (Made by :InsertPlayZ , through GIMP : https://www.gimp.org/
+# How does it work?
+It executes some system irritating codes that are usaully used to move your system's mouse for longer than 5 seconds
+then it start spamming some random characters through your PC's keyboard.
+Then it executes some random commands that are used to show you some irritating system tray notifications, and some irritating
+message boxes that contains the ERROR logo (w/OK button).
+This project contains a digital signature.
+# Are those codes really safe for me?
+Those codes aren't a malware, you can scan the executable by yourself , if you wish.
+# Did you scan it?
+Yup , I have scanned them already through many and many of other Anti-virus software.
+# Short facts : 
+Project name : Total System Security
+Project company : Total System Security LLC , USA (Fake)
+Project size : Usually not larger than 200KB
+Project license : same as the repository's license (GNU GPL +2)
+# Rights : 
+You've got rights to use this project anywhere else (But please say the name of the actual owner of it)
+# Source code : 
+It is explained in the .bat file of it.
+# Thanks for reading!
