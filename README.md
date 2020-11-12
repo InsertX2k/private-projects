@@ -1,5 +1,5 @@
 # Private Projects
-A Private Project means a project that shouldn't be shared anywhere else over the internet, it should only exist on a certian place and only certain people must access them.
+A Private Project means a project that shouldn't be shared anywhere else over the internet, it should only exist on a certain place and only certain people must access them.
 # WARNINGS : 
 # 
 That's the same meaning for Private Projects, they might contain viruses, malware, ransomwares, rogues, etc..
